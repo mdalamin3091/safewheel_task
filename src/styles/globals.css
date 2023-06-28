@@ -29,3 +29,7 @@
 		@apply py-3 bg-primary text-white text-[18px] font-[600] w-full rounded-lg hover:bg-[#f54003] transition-all ease-in;
 	}
 }
+
+body{
+	background-color: #161C24;
+}

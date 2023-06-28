@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { Fragment } from 'react'
 import Header from '../components/header'
 
 interface Props {
@@ -6,10 +6,10 @@ interface Props {
 }
 const Layout = (props: Props) => {
     return (
-        <div className="bg-primary_bg">
+        <Fragment>
             <Header />
             {props.children}
-        </div>
+        </Fragment>
     )
 }
 
