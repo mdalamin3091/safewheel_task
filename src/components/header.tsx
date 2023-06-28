@@ -2,7 +2,7 @@ import Link from "next/link";
 
 const Header = () => {
     return (
-        <header className="bg-primary_bg">
+        <header>
             <nav className="container mx-auto flex items-center justify-between py-4">
                 <Link href="/">
                     <p className="text-white md:text-xl text-[26px] italic">

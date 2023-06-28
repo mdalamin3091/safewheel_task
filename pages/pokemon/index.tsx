@@ -37,7 +37,7 @@ const Pokemon = () => {
     }
 
     return (
-        <div className="flex items-center justify-start flex-col gap-8 bg-primary_bg min-h-screen pb-10 px-3 md:px-0">
+        <div className="flex items-center justify-start flex-col gap-8 min-h-screen pb-10 px-3 md:px-0">
             <h2 className="text-white text-xl text-center">Pokemon Data</h2>
             {content}
         </div>
