@@ -1,6 +1,6 @@
-# Starting with FoodU
+# Starting with Safewheel
 
-[SafeWheel](https://safewheel-pokemon.vercel.app/).
+[SafeWheel](https://safewheel-pokemon.vercel.app/)
 ![safewheel](https://i.ibb.co/1Xfjs3C/Safewheel-Login.png)
 ![safewheel](https://i.ibb.co/0XrjK0L/Safewheel-Pokemon.png)
 
