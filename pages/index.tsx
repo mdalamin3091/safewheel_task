@@ -59,9 +59,9 @@ export default function Home() {
 							<div>
 								<input
 									name="phone"
-									type="tel"
+									type="number"
 									placeholder="Phone number"
-									className={`input ${errors.phone && touched.phone && "input-error"
+									className={`input appearance-none ${errors.phone && touched.phone && "input-error"
 										}`}
 									onChange={handleChange}
 									value={values.phone}
