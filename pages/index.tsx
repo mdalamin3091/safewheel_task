@@ -3,8 +3,8 @@ import { useState } from "react";
 import toast from "react-hot-toast";
 import { useFormik } from "formik";
 import * as Yup from "yup";
-import { useAppDispatch } from "../redux/store";
-import { loginSuccess } from "../redux/features/loginSlice";
+import { useAppDispatch } from "../src/redux/store";
+import { loginSuccess } from "../src/redux/features/loginSlice";
 export default function Home() {
 	const [isLoading, setIsLoading] = useState<Boolean>(false);
 	const dispatch = useAppDispatch();
@@ -38,7 +38,7 @@ export default function Home() {
 	});
 	const { errors, values, touched, handleChange, handleSubmit } = formik;
 	return (
-		<section className="bg-primary_bg h-screen">
+		<section className="bg-primary_bg min-h-screen">
 			<div className="container">
 			<div className="wrapper">
 				<div className="basis-7/12 md:block">

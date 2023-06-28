@@ -1,21 +1,24 @@
 import { Toaster } from 'react-hot-toast'
 import type { AppProps } from 'next/app'
-import Providers from '../redux/Providers'
-import Header from '../components/header'
-import '../styles/globals.css'
+import { ApolloProvider } from '@apollo/client'
+import Providers from '../src/redux/Providers'
+import Header from '../src/components/header'
+import client from '../src/lib/client'
+import '../src/styles/globals.css'
 
 export default function App({ Component, pageProps }: AppProps) {
-  return (
-    <Providers>
-      <Header />
-      {/* <body className="bg-primary_bg h-screen font-Inter"> */}
-      <Toaster
-            toastOptions={{
-              duration: 2000,
-            }}
-          />
-        <Component {...pageProps} />
-      {/* </body> */}
-    </Providers>
-  )
+	return (
+		<ApolloProvider client={client}>
+			<Providers>
+				<Header />
+				<Toaster
+					toastOptions={{
+						duration: 2000,
+					}}
+				/>
+				<Component {...pageProps} />
+			</Providers>
+		</ApolloProvider>
+
+	)
 }
