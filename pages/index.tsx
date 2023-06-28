@@ -61,7 +61,7 @@ export default function Home() {
 									name="phone"
 									type="number"
 									placeholder="Phone number"
-									className={`input appearance-none ${errors.phone && touched.phone && "input-error"
+									className={`input ${errors.phone && touched.phone && "input-error"
 										}`}
 									onChange={handleChange}
 									value={values.phone}

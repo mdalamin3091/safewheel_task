@@ -4,6 +4,7 @@ import LoadingSpinner from "../../src/components/LoadingSpinner";
 import ErrorMessage from "../../src/components/ErrorMessage";
 import DataNotFoundMessage from "../../src/components/NotFound";
 import PokemonCard from "../../src/components/PokemonCard";
+import { useEffect } from "react";
 
 export type PokemonType = {
     id: string;
@@ -15,6 +16,11 @@ export type PokemonType = {
 };
 
 const Pokemon = () => {
+    
+    useEffect(() =>{
+        document.title = "Safewheel - Pokemon"
+    }, [])
+
     const { loading, error, data } = useQuery(GET_POKEMON_LIST);
     let content;
     if (loading) {
